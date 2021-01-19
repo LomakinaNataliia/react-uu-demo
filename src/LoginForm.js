@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./LoginForm.css";
 
 export default function LoginForm() {
   let [userEmail, setUserEmail] = useState("");
@@ -23,9 +24,19 @@ export default function LoginForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="e-mail" placeholder="E-mail" onChange={updateEmail} />
-      <input type="password" placeholder="Password" onChange={updatePassword} />
-      <input type="submit" value="Login" />
+      <input
+        type="e-mail"
+        placeholder="Enter Your E-mail"
+        onChange={updateEmail}
+        className="field"
+      />
+      <input
+        type="password"
+        placeholder="Enter Your Password"
+        onChange={updatePassword}
+        className="field"
+      />
+      <input type="submit" value="Login" className="field submit-button" />
     </form>
   );
 }

@@ -7,7 +7,7 @@ export default function App() {
     <div className="App">
       <h1>UU_demo page</h1>
       <LoginForm />
-      <footer>
+      <footer className="footer">
         {" "}
         This project is{" "}
         <a
