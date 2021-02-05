@@ -1,14 +1,13 @@
 import React, { useState } from "react";
-import "./LoginForm.css";
 
-export default function LoginForm() {
+export default function RegisterForm() {
   let [userEmail, setUserEmail] = useState("");
   let [password, setPassword] = useState("");
 
   function handleSubmit(event) {
     event.preventDefault();
     if (userEmail.length > 0 && password.length > 0) {
-      alert(`Loging in with ${userEmail} and ${password}`);
+      alert(`Signin in with ${userEmail} and ${password}`);
     } else {
       alert(`Please fill in the form`);
     }
@@ -36,7 +35,7 @@ export default function LoginForm() {
         onChange={updatePassword}
         className="field"
       />
-      <input type="submit" value="Login" className="field submit-button" />
+      <input type="submit" value="Signin" className="field submit-button" />
     </form>
   );
 }

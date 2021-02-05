@@ -1,0 +1,64 @@
+div .App {
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px 5px rgba(9, 32, 63, 0.5);
+  color: azure;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+
+  font-family: "Sora", sans-serif;
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 70px;
+}
+
+h1 {
+  padding-top: 50px;
+}
+
+a {
+  color: #fe9a8b;
+}
+
+.footer {
+  text-align: left;
+  padding-top: 100px;
+}
+
+.active {
+  display: none;
+}
+
+.field {
+  border: 2px solid transparent;
+  border-radius: 5px;
+  color: #3d2f59;
+
+  display: block;
+  padding: 10px;
+  margin: 10px auto;
+  width: 225px;
+}
+
+.submit-button {
+  /* background: #e5ce8a; */
+
+  background-image: linear-gradient(
+    to right,
+    #f78ca0 0%,
+    #f9748f 19%,
+    #fd868c 60%,
+    #fe9a8b 100%
+  );
+  color: #09203f;
+  font-size: 15px;
+  margin: 30px auto;
+}
+.submit-button:hover {
+  background-image: none;
+  background-color: transparent;
+  border: 2px solid #fe9a8b;
+  color: #fe9a8b;
+  cursor: pointer;
+}
